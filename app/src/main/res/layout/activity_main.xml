@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/azure"
+    tools:context="com.nelsonbenitez.calculadora.MainActivity">
+
+
+    <EditText
+        android:id="@+id/proceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:hint="@string/cero"
+        android:textColor="@color/lightskyblue"
+        android:padding="10dp"
+        android:textSize="40sp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/cero"
+        android:textSize="30sp"
+        android:id="@+id/resultado"
+        android:textColor="@color/palevioletred"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:layout_weight="0.4"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:id="@+id/siete"
+            android:text="@string/siete"
+            android:onClick="numPresionado"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:text="@string/ocho"
+            android:id="@+id/ocho"
+            android:onClick="numPresionado"
+            />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/nueve"
+            android:text="@string/nueve"
+            android:onClick="numPresionado"
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/mas"
+            android:text="@string/mas"
+            android:onClick="operaPresionado"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:text="@string/seis"
+            android:id="@+id/seis"
+            android:onClick="numPresionado"
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/cinco"
+            android:text="@string/cinco"
+            android:onClick="numPresionado"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/cuatro"
+            android:text="@string/cuatro"
+            android:onClick="numPresionado"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/menos"
+            android:text="@string/menos"
+            android:onClick="operaPresionado"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/tres"
+            android:text="@string/tres"
+            android:onClick="numPresionado"
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/dos"
+            android:text="@string/dos"
+            android:onClick="numPresionado"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/uno"
+            android:text="@string/uno"
+            android:onClick="numPresionado"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/times"
+            android:text="@string/por"
+            android:onClick="operaPresionado"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/punto"
+            android:text="@string/punto"
+            android:onClick="numPresionado"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/cero"
+            android:text="@string/cero"
+            android:onClick="numPresionado"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:text="@string/igual"
+            android:onClick="equalClicked"
+            android:id="@+id/equals"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:minHeight="80dp"
+            android:layout_weight="1"
+            android:id="@+id/division"
+            android:text="@string/divide"
+            android:onClick="operaPresionado"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
